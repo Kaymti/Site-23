@@ -1,0 +1,7 @@
+Aplicacoes utilizadas:
+-> Visual Studio (com live server extension)
+
+codigos:
+-> Html e Css
+-> Javascript
+-> Api Quickchart (https://quickchart.io/)
