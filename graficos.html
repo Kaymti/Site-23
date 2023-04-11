@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+   <head>
+    <name> </name>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="css/Navbar&MenuMobile.css">
+    <link rel="stylesheet" type="text/css" href="css/InterfaceGrafica.css">
+    <link rel="stylesheet" type="text/css" href="css/MenuSelect.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="scripts/MenuMobile.js" defer></script>
+    <script src="scripts/MenuSelect.js" defer></script>
+    <script src="scripts/Seletor.js" defer></script>
+   </head>
+
+   <body>
+    <title>aoba</title>
+      
+   <header class="primary-header flex bg-light">
+      <div>
+        <div class="logo"><img src= "css/img/parrotblk.png"></div>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">
+          Menu
+        </span>
+      </button>
+
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex bg-light"> 
+          <li><a href="index.html"><span aria-hidden="true"></span>Home </a></li>
+          <li><a href="sobre.html"><span aria-hidden="true"></span>Sobre</a></li>
+          <li><a href="graficos.html"><span aria-hidden="true"></span>Graficos</a></li>
+          <li><a href="contatos.html"><span aria-hidden="true"></span>Contatos</a></li>
+        </ul>
+      </nav>
+   </header>
+
+ <form name="my-form" action method="post">  
+ <div class="Selecao">
+
+   <div class="dropdown">
+    <div class="select">
+      <span class="selected">Cruzeiro</span>
+      <div class="caret"></div>
+    </div>
+    <ul class="menu">
+     <li value="1">Lorena</li>
+     <li value="2">Guaratingueta</li>
+     <li value="3">Sao Jose dos Campos</li>
+     <li value="4">Aparecida</li>
+     <li class="active" value="5">Cruzeiro</li>
+    </ul> 
+    </div>
+
+  <div class="dropdown">
+   <div class="select">
+     <span class="selected">Lorena</span>
+     <div class="caret"></div>
+   </div>
+   <ul class="menu">
+    <li value="1" class="active">Lorena</li>
+    <li value="2">Guaratingueta</li>
+    <li value="3">Sao Jose dos Campos</li>
+    <li value="4">Aparecida</li>
+    <li value="5">Cruzeiro</li>
+   </ul>
+   </div>
+
+   <div class="dropdown">
+    <div class="select">
+      <span class="selected">Populacao</span>
+      <div class="caret"></div>
+    </div>
+    <ul class="menu">
+     <li value="1" class="active">Populacao</li>
+     <li value="2">Criminalidade</li>
+     <li value="3">Mortalidade</li>
+     <li value="4">Natalidade</li>
+     <li value="5">Poluicao</li>
+    </ul>
+    </div>
+
+    <div class="envio"><input type="button" value="Enviar" onclick="envio()"></div>
+  </form>
+ </div>
+
+  <div class="Grafico1">
+     <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Janeiro','Fevereiro'], datasets:[{label:'Canas',data:[50,70,190]},{label:'Guaratingueta',data:[100,200,250]}]}}" />  -->
+  </div>
+
+
+   </body>
+
+
+ <script>
+  function envio(){
+      console.log("teste");
+  } 
+ </script>
+
+</html>
