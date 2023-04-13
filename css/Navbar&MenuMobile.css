@@ -11,6 +11,11 @@
     font-family: "Edu" ;
     src: url(fonts/EduNSWACTFoundation-VariableFont_wght.ttf);
 }
+
+@font-face {
+    font-family: "Quadranta";
+    src: url(fonts/Quadranta-Regular.otf);
+}
 /* ----------------------------------------------*/
 /*               Classes de Utilidade            */
 /* ----------------------------------------------*/
@@ -110,6 +115,13 @@ button,input,textarea,select{
 .text-azulclaro { color: hsl( var(--clr-azulclaro) );}
 .text-azulescuro { color: hsl( var(--clr-azulescuro) );}
 
+.primary-header h1{
+    font-size: 40px;
+    font-family: Quadranta;
+    font-weight: lighter;
+    margin: 0 0 0 -65px;
+}
+
 .primary-navigation a:visited{
     font:black;
 }
@@ -156,7 +168,7 @@ a:visited { text-decoration: none;}
     .primary-navigation{
         font-family: romono;
         list-style: none;
-        font-size:23px;
+        font-size:25px;
     }
     
     .mobile-nav-toggle{
@@ -241,7 +253,7 @@ a:visited { text-decoration: none;}
     .primary-navigation{
         margin:6px;
         list-style: none;
-        font-size:20px;
+        font-size:22px;
         font:black;
     }
 
@@ -273,7 +285,7 @@ a:visited { text-decoration: none;}
     
     .primary-navigation{
         list-style: none;
-        font-size:24px;
+        font-size:22px;
         font:black;
     }
     
