@@ -24,6 +24,17 @@ body{
     overflow-y: scroll;
 }
 
+.banner{
+    justify-content: center;
+    margin:20px 30px 20px 30px;
+}
+
+.banner img{
+    border-radius: 10px;
+    width:100%;
+    height:auto;
+}
+
 .conteudo {
     border: white 1px dashed;
     border-radius: 10px;
