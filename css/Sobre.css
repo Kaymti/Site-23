@@ -36,6 +36,7 @@ body{
 }
 
 .conteudo {
+    background-image: url(img/cartographer.png);
     border: white 1px dashed;
     border-radius: 10px;
     justify-content: center;

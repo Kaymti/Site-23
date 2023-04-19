@@ -3,6 +3,11 @@
     src: url(fonts/Fragmentcore.otf);
 }
 
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 :root{
     --bg-color: rgb(20,20,20);
 }
@@ -54,19 +59,41 @@ body{
 }
 
 .card-bg1{
-    background-image: url(img/iris.png);
+    background-image: url(img/cartographer.png);
 }
 
 .card-bg2{
-    
+    background-image: url(img/cartographer.png);
 }
 
 .card-bg3{
-    
+    background-image: url(img/cartographer.png);
 }
 
 .card-bg4{
-    
+    background-image: url(img/cartographer.png);
+}
+
+.outros{
+    background-image: url(img/cartographer.png);
+    border: white 1px dashed;
+    border-radius: 10px;
+    justify-content: center;
+    margin:20px 80px 30px 80px;
+}
+
+.outros h1{
+    color:white;
+    font-family: Core;
+    margin:0 0 0 12px;
+}
+
+.outros h2{
+    color:white;
+    font-family: Montserrat;
+    margin:0 0 7px 12px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 @media only screen and (max-width : 640px) {
