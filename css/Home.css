@@ -8,8 +8,8 @@
 }
 
 @font-face {
-    font-family: "Edu" ;
-    src: url(fonts/EduNSWACTFoundation-VariableFont_wght.ttf);
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 :root{
@@ -46,23 +46,52 @@ body{
 
 .primary-navigation a:hover{
     color:red;
-    transition: 0.3 s;
+    transition: 0.5 s;
+}
+
+body{
+    background-image: url(img/cartographer.png);
 }
 
 .Conteudo{
     color:antiquewhite;
-    font-family: Edu;
+    font-family: Montserrat;
 
     padding-top: 100px;
     padding-bottom: 200px;
 
-    background-image: url(img/lake.png);
+    background-image: url(img/cartographer.png);
     background-attachment:fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .Conteudo h1{
     font-size: 30px;
     margin-left: 20px;
+}
+
+.Conteudo h2{
+    margin-left: 30px;
+}
+
+.Conteudo button{
+    margin: 20px 0 0 60px;
+    border-radius: 3px;
+
+    font-family: Montserrat;
+    font-size:20px;
+
+    background-color: #555555;
+    transition-duration: 0.4s;
+    border: 2px solid white;
+    color:white;
+}
+
+.Conteudo button:hover{
+    background-color: white;
+    color:black;
+}
+
+.Conteudo img{
+    float: right;
+    margin: -200px 0 0 0;
 }
