@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Core" ;
+    src: url(fonts/Fragmentcore.otf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root{
+    --bg-color: rgb(20,20,20);
+}
+
+body{
+    background-color:var(--bg-color);
+    height:100vh;
+    margin:0px;
+    overflow:hidden;
+    padding:0px;
+}
+
+body{
+    overflow-y: scroll;
+}
+
+.banner{
+    justify-content: center;
+    margin:20px 30px 20px 30px;
+}
+
+.banner img{
+    border-radius: 10px;
+    width:100%;
+    height:auto;
+}
+
+.conteudo {
+    background-image: url(img/cartographer.png);
+    border: white 1px dashed;
+    border-radius: 10px;
+    justify-content: center;
+    margin:0 30px 20px 30px;
+}
+
+.conteudo h1{
+  padding: 10px 0 10px 20px;
+  color:white;
+  font-family: Core;
+}
+
+.conteudo h2{ 
+  font-size:20px;
+  padding: 5px 0 8px 20px; 
+  color:white;
+  font-family: Montserrat;
+  font-weight: lighter;
+}
