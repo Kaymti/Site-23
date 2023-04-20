@@ -22,6 +22,7 @@ body{
     margin:0px;
     overflow:scroll;
     padding:0px;
+    min-height: 1000px;
 }
 
 .flex{
@@ -60,20 +61,43 @@ body{
     padding-top: 100px;
     padding-bottom: 200px;
 
-    background-image: url(img/cartographer.png);
     background-attachment:fixed;
 }
 
 .Conteudo h1{
     font-size: 30px;
+}
+
+.Topo h1{
     margin-left: 20px;
+    margin-right:450px;
 }
 
-.Conteudo h2{
+.Baixo h1{
+    float:right;
+    margin-right: 200px;
+    margin-left: 550px;
+}
+
+.Topo h2{
     margin-left: 30px;
+    margin-right: 400px;
 }
 
-.Conteudo button{
+.Baixo h2{
+    font-size: 20px;
+    float:right;
+    margin-right: 200px;
+    margin-left: 550px;
+}
+
+.Baixo img{
+    position:inherit;
+    float:left;
+    margin:-150px 0 0 135px;
+}
+
+.Topo button{
     margin: 20px 0 0 60px;
     border-radius: 3px;
 
@@ -86,12 +110,47 @@ body{
     color:white;
 }
 
-.Conteudo button:hover{
+.Topo button:hover{
     background-color: white;
     color:black;
 }
 
-.Conteudo img{
+.Topo img{
     float: right;
     margin: -200px 0 0 0;
+}
+
+hr{
+    width:100%;
+    border: none;
+    height: 1px;
+    background: #000;
+    background: repeating-linear-gradient(90deg,white,white 6px,transparent 6px,transparent 12px);
+}
+
+@media only screen and (max-width: 1068px){
+    .Topo img{
+        float: right;
+        margin: -245px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .Topo img{
+        float: right;
+        margin: -280px 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 1250px){
+    .Baixo img{
+        float:left;
+        margin:-200px 0 0 135px;
+    }
+}
+
+@media only screen and (min-width:800px){
+    body{
+        min-height: 1100px;
+    }
 }

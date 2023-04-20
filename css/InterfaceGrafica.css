@@ -9,3 +9,10 @@ body{
     overflow:hidden;
     padding:0px;
 }
+
+.Grafico1{
+    border: white 1px dashed;
+    border-radius: 10px;
+    background-image: url(img/cartographer.png);
+    margin: 0 20px 0 20px;
+}
