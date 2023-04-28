@@ -44,7 +44,7 @@ body{
     width:80%;
     font-family: Core;
     background-color:rgba(0,0,0,0.85);
-    margin: 200px 0 0 10px;
+    margin:0 0 0 10px;
     color:white;
 }
 
@@ -72,6 +72,17 @@ body{
 
 .card-bg4{
     background-image: url(img/cartographer.png);
+}
+
+.diamond{
+    border:2px rgb(202, 195, 195) solid;
+    margin:40px;
+    max-width:38%;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+.diamond img{
+    transform: rotate(-45deg) scale(1.42);
 }
 
 .outros{

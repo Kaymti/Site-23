@@ -22,7 +22,7 @@ body{
     margin:0px;
     overflow:scroll;
     padding:0px;
-    min-height: 1000px;
+    min-height: 700px;
 }
 
 .flex{
@@ -89,12 +89,13 @@ body{
     float:right;
     margin-right: 200px;
     margin-left: 550px;
+    margin-bottom: 40px;
 }
 
-.Baixo img{
-    position:inherit;
+.img-baixo{
+    position:absolute;
     float:left;
-    margin:-150px 0 0 135px;
+    margin: 0 0 0 135px;
 }
 
 .Topo button{
@@ -115,42 +116,41 @@ body{
     color:black;
 }
 
-.Topo img{
+.img-topo{
+    position: relative;
     float: right;
     margin: -200px 0 0 0;
 }
 
 hr{
     width:100%;
+    margin:10px 0 0 10px;
     border: none;
     height: 1px;
     background: #000;
     background: repeating-linear-gradient(90deg,white,white 6px,transparent 6px,transparent 12px);
 }
 
-@media only screen and (max-width: 1068px){
-    .Topo img{
-        float: right;
-        margin: -245px 0 0 0;
-    }
-}
 
-@media only screen and (max-width: 1000px){
-    .Topo img{
-        float: right;
-        margin: -280px 0 0 0;
-    }
-}
-
-@media only screen and (min-width: 1250px){
-    .Baixo img{
-        float:left;
-        margin:-200px 0 0 135px;
-    }
-}
-
-@media only screen and (min-width:800px){
+@media only screen and (max-width:800px){
     body{
-        min-height: 1100px;
+        min-height: 2000px;
+    }
+    .img-topo{
+       position:static;
+       margin: -450px 0 0 250px ;
+    }
+    .Conteudo h1{
+        margin:100px 0 0 0;
+    }
+
+    .Conteudo h2{
+        margin:100px 0 0 0;
+    }
+}
+
+@media only screen and (max-width:980px){
+    body{
+        min-height:fit-content;
     }
 }
