@@ -1,0 +1,104 @@
+/* -----------------------------------------------*/
+/*                     Fontes                     */
+/* -----------------------------------------------*/
+
+@font-face {
+    font-family: "Romono" ;
+    src: url(../css/fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../css/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Core" ;
+    src: url(../css/fonts/Fragmentcore.otf);
+}
+
+:root{
+    --bg-color: rgb(20,20,20);
+}
+
+body{
+    background-color:var(--bg-color);
+    height:100vh;
+    margin:0px;
+    overflow:scroll;
+    padding:0px;
+    min-height: 700px;
+}
+
+.flex{
+    display: flex;
+    gap: var(--gap, 2rem);   
+}
+
+.grid{
+    display:grid;
+    gap: var(--gap, 3rem);
+}
+
+.container{
+    padding-inline: 2em;
+    max-width: 80rem;
+    margin-inline: auto;
+}
+
+.primary-navigation a:visited{
+    font:black;
+}
+
+.primary-navigation a:hover{
+    color:red;
+    transition: 0.5 s;
+}
+
+body{
+    background-image: url(../css/img/cartographer.png);
+    min-height: 1100px;
+}
+
+.Mapa img{
+    display:block;
+    float:left;
+    border: black 2px solid;
+    border-radius: 10px;
+    margin: 23px 0 5px 20px;
+    width: 39%;
+    max-width: 450px;
+}
+
+.Info{
+    float:right;
+    width:55%;
+    min-width: 40%;
+    color:whitesmoke;
+    margin: 24px 20px 20px 0;
+    padding-left:20px;
+    border: white 1px dashed;
+    border-radius: 10px;
+    background-color: rgba(169, 169, 169, 0.116);
+    font-family: Romono;
+    font-weight: 100;
+}
+
+.Info li{
+    margin-left: -20px;
+}
+
+.Info ul{
+    margin-top:-2px;
+}
+
+.Info h1{
+   margin-top: 20px;
+   font-family: Montserrat;
+}
+
+.Info h4{
+    margin: 20px 0 20px 0;
+    font-family: Montserrat;
+    font-weight: 400;
+}

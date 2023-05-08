@@ -52,6 +52,7 @@ body{
 
 body{
     background-image: url(img/cartographer.png);
+    min-height: 1200px;
 }
 
 .Conteudo{
@@ -59,9 +60,16 @@ body{
     font-family: Montserrat;
 
     padding-top: 100px;
-    padding-bottom: 200px;
 
     background-attachment:fixed;
+}
+
+.Conteudo .Topo{
+    padding-bottom: 200px;
+}
+
+.Conteudo .Baixo{
+    margin-bottom: 10px;
 }
 
 .Conteudo h1{
@@ -132,25 +140,114 @@ hr{
 }
 
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:740px){
     body{
-        min-height: 2000px;
+        min-height: 1300px;
     }
     .img-topo{
-       position:static;
-       margin: -450px 0 0 250px ;
+        width:auto;
+        position:static;
+        margin: -500px 0 0 20px;
     }
-    .Conteudo h1{
-        margin:100px 0 0 0;
+    .Topo h1{
+        float:right;
+        margin:0 50px 10px 50px;
     }
 
-    .Conteudo h2{
-        margin:100px 0 0 0;
+    .Topo h2{
+        float: right;
+        margin:0 400px 0 50px;
+    }
+
+    hr{
+        margin:-50px 0 0 0;
     }
 }
 
-@media only screen and (max-width:980px){
+@media only screen and (max-width:832px){
+    
+    .img-topo{
+        margin-top: -325px;
+        margin-left: 300px;
+        width:70%;
+        max-width:100%;
+        height:auto;
+    }
+
+    .img-baixo{
+        position:static;
+        margin-top: -400px;
+        margin-left:60px;
+    }
+
     body{
         min-height:fit-content;
     }
+
+    .Baixo h1{
+        float:right;
+        margin:0 20px 10px 400px;
+    }
+
+    .Baixo h2{
+        float:right;
+        margin:0 70px 150px 400px;
+    }
+}
+
+@media only screen and (max-width:650px){
+   .img-topo{
+    width:70%;
+    margin-top: -450px;
+   }
+}
+
+/* Barra de pesquisa */
+
+.wrapper{
+    color:#000;
+    max-width:450px;
+    width: 230px;
+    margin-top: 345px;
+    margin-left: 545px;
+    margin-bottom: 300px;
+}
+
+.wrapper .search-input{
+    overflow-y: hidden;
+    background: #fff;
+    width:100%;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+    height:55px;
+    width:100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 30px;
+    font-size:18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input .autocom-box{
+    max-height: 280px;
+    overflow-y:auto;
+    opacity:0;
+    pointer-events: none;
+    display: none;
+}
+
+.autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    width: 100%;
+    cursor:default;
+    border-radius: 3px;
+}
+
+.autocom-box li:hover{
+    background: #efefef;
 }
