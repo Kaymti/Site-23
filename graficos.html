@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
    <head>
@@ -9,15 +8,22 @@
     <link rel="stylesheet" type="text/css" href="css/Navbar&MenuMobile.css">
     <link rel="stylesheet" type="text/css" href="css/InterfaceGrafica.css">
     <link rel="stylesheet" type="text/css" href="css/MenuSelect.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="scripts/MenuMobile.js" defer></script>
-    <script src="scripts/MenuSelect.js" defer></script>
     <script src="scripts/Seletor.js" defer></script>
+    <script src="scripts/MenuSelect.js" defer></script>
    </head>
 
    <body>
     <title>Graficos - Geodex </title>
       
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    -->
+
    <header class="primary-header flex bg-light">
       <div>
         <div class="logo"><img src= "css/img/parrotblk.png"></div>
@@ -38,65 +44,58 @@
         </ul>
       </nav>
    </header>
+     <div class="wrapper cid1">
+      <div class="select-btn cid1">
+        <span>Cidade 1</span>
+        <i class="uil uil-angle-down"></i>
+      </div>
+      <div class="content">
+        <div class="search">
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Cidade 1">
+        </div>
+        <ul class="options cid1"></ul>
+      </div>
+     </div>
+     <div class="wrapper cid2">
+      <div class="select-btn cid2">
+        <span>Cidade 2</span>
+        <i class="uil uil-angle-down"></i>
+      </div>
+      <div class="content">
+        <div class="search">
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Cidade 2">
+        </div>
+        <ul class="options cid2"></ul>
+      </div>
+     </div>
+     <div class="wrapper tipo">
+      <div class="select-btn tipo">
+        <span>Tipo</span>
+        <i class="uil uil-angle-down"></i>
+      </div>
+      <div class="content">
+        <div class="search">
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Tipo">
+        </div>
+        <ul class="options tipo"></ul>
+      </div>
+     </div>
 
- <form name="my-form" action method="post">  
- <div class="Selecao">
-
-   <div class="dropdown">
-    <div class="select">
-      <span class="selected">Cruzeiro</span>
-      <div class="caret"></div>
-    </div>
-    <ul class="menu">
-     <li value="1">Lorena</li>
-     <li value="2">Guaratingueta</li>
-     <li value="3">Sao Jose dos Campos</li>
-     <li value="4">Aparecida</li>
-     <li class="active" value="5">Cruzeiro</li>
-    </ul> 
-    </div>
-
-  <div class="dropdown">
-   <div class="select">
-     <span class="selected">Lorena</span>
-     <div class="caret"></div>
-   </div>
-   <ul class="menu">
-    <li value="1" class="active">Lorena</li>
-    <li value="2">Guaratingueta</li>
-    <li value="3">Sao Jose dos Campos</li>
-    <li value="4">Aparecida</li>
-    <li value="5">Cruzeiro</li>
-   </ul>
-   </div>
-
-   <div class="dropdown">
-    <div class="select">
-      <span class="selected">Populacao</span>
-      <div class="caret"></div>
-    </div>
-    <ul class="menu">
-     <li value="1" class="active">Populacao</li>
-     <li value="2">Criminalidade</li>
-     <li value="3">Mortalidade</li>
-     <li value="4">Natalidade</li>
-     <li value="5">Poluicao</li>
-    </ul>
-    </div>
-
-    <div class="envio"><input type="button" value="Enviar" onclick="envio()"></div>
-  </form>
+   <!-- <div class="envio"><input type="button" value="Enviar" onclick="envio()"></div> -->
  </div>
 
   <div class="Grafico1">
-    <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Janeiro','Fevereiro'], datasets:[{label:'Cruzeiro',data:[50,70,190]},{label:'Lorena',data:[100,200,250]}]}}" />  
+    <!-- <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Janeiro','Fevereiro'], datasets:[{label:'Cruzeiro',data:[50,70,190]},{label:'Lorena',data:[100,200,250]}]}}" />  -->
   </div>
    </body>
 
 
  <script>
   function envio(){
-      console.log("teste");
+      grafico();
   } 
  </script>
 
