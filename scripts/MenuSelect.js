@@ -5,9 +5,9 @@ const wrapper3 = document.querySelector(".wrapper.tipo");
 options1 = wrapper1.querySelector(".options.cid1");
 options2 = wrapper2.querySelector(".options.cid2");
 options3 = wrapper3.querySelector(".options.tipo");
-searchInp1 = wrapper1.querySelector(".input.cid1");
-searchInp2 = wrapper1.querySelector(".input.cid2");
-searchInp3 = wrapper1.querySelector(".input.tipo");
+var searchInp1 = wrapper1.querySelector("input");
+var searchInp2 = wrapper2.querySelector("input");
+var searchInp3 = wrapper3.querySelector("input");
 selectBtn1 = document.querySelector(".select-btn.cid1");
 selectBtn2 = document.querySelector(".select-btn.cid2");
 selectBtn3 = document.querySelector(".select-btn.tipo");
@@ -73,6 +73,29 @@ function updateNameTipo(selectedLi){
 addSugestao();
 addTipo();
 
-searchInp1.addEventListener("onkeydown", () => {
-    console.log(searchInp1.value);
+searchInp1.addEventListener("keyup", () => {
+    let arr = [];
+    let searchedVal = searchInp1.value.toLowerCase();
+    arr = Sugestao.filter(data => {
+        return data.toLowerCase().startsWith(searchedVal);
+    }).map(data => `<li>${data}</li>`).join("");
+    options1.innerHTML = arr;
+});
+
+searchInp2.addEventListener("keyup", () => {
+    let arr = [];
+    let searchedVal = searchInp2.value.toLowerCase();
+    arr = Sugestao.filter(data => {
+        return data.toLowerCase().startsWith(searchedVal);
+    }).map(data => `<li>${data}</li>`).join("");
+    options2.innerHTML = arr;
+});
+
+searchInp3.addEventListener("keyup", () => {
+    let arr = [];
+    let searchedVal = searchInp3.value.toLowerCase();
+    arr = tipo.filter(data => {
+        return data.toLowerCase().startsWith(searchedVal);
+    }).map(data => `<li>${data}</li>`).join("");
+    options3.innerHTML = arr;
 });
