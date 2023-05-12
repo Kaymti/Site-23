@@ -56,6 +56,7 @@ body{
 }
 
 .Conteudo{
+    display: inline-block;
     color:antiquewhite;
     font-family: Montserrat;
 
@@ -65,7 +66,7 @@ body{
 }
 
 .Conteudo .Topo{
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 
 .Conteudo .Baixo{
@@ -83,8 +84,8 @@ body{
 
 .Baixo h1{
     float:right;
-    margin-right: 200px;
-    margin-left: 550px;
+    margin-right: 100px;
+    margin-left: 470px;
 }
 
 .Topo h2{
@@ -95,8 +96,8 @@ body{
 .Baixo h2{
     font-size: 20px;
     float:right;
-    margin-right: 200px;
-    margin-left: 550px;
+    margin-right: 100px;
+    margin-left: 470px;
     margin-bottom: 40px;
 }
 
@@ -124,10 +125,11 @@ body{
     color:black;
 }
 
-.img-topo{
-    position: relative;
-    float: right;
-    margin: -200px 0 0 0;
+.img-topo img{
+    position: static;
+    float:right;
+    margin-top: -350px;
+    margin-right: -70px;
 }
 
 hr{
@@ -138,40 +140,18 @@ hr{
     background: #000;
     background: repeating-linear-gradient(90deg,white,white 6px,transparent 6px,transparent 12px);
 }
-
-
-@media only screen and (max-width:740px){
-    body{
-        min-height: 1300px;
-    }
-    .img-topo{
-        width:auto;
-        position:static;
-        margin: -500px 0 0 20px;
-    }
-    .Topo h1{
-        float:right;
-        margin:0 50px 10px 50px;
-    }
-
-    .Topo h2{
-        float: right;
-        margin:0 400px 0 50px;
-    }
-
-    hr{
-        margin:-50px 0 0 0;
-    }
-}
-
 @media only screen and (max-width:832px){
     
     .img-topo{
-        margin-top: -325px;
-        margin-left: 300px;
-        width:70%;
+        margin-left: 100px;
+        margin-top: -90px;
+        width:85%;
         max-width:100%;
         height:auto;
+    }
+     
+    button{
+        margin-bottom: 2px;
     }
 
     .img-baixo{
@@ -195,9 +175,61 @@ hr{
     }
 }
 
+@media only screen and (max-width:740px){
+    body{
+        min-height: 1300px;
+    }
+
+    .img-topo{
+        margin-top: -300px;
+        margin-left: 20px;
+    }
+
+    .img-topo img{
+        padding-top: 20px;
+        padding-left: 5px;
+        width:80%;
+    }
+    .Topo h1{
+        float:right;
+        margin:0 50px 10px 50px;
+    }
+
+    .Topo h2{
+        float: right;
+        margin:0 400px 0 50px;
+    }
+
+    hr{
+        margin:-50px 0 0 0;
+    }
+}
+
+
 @media only screen and (max-width:650px){
+
    .img-topo{
-    width:70%;
-    margin-top: -450px;
+    margin-bottom: 110px;
    }
+
+   .img-topo img{
+    width:90%;
+    margin-top: -400px;
+    margin-left: 80px;
+   }
+
+   .img-baixo img{
+    margin-top: -50px;
+    width:110%;
+   }
+   .Conteudo button{
+    margin-bottom: 260px;
+   }
+}
+
+@media only screen and (max-width:565){
+
+    .Topo h1{
+        float: left;
+    }
 }
