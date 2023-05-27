@@ -145,7 +145,7 @@
     font-family: romono;
     font-size: 12px;
     margin-top: 8px;
-    margin-left: 5px;
+    margin-left: 20px;
     position: absolute;
     background: #2a2f3b;
     color:white;
@@ -167,8 +167,10 @@
     }
 
     .envio input{
+        font-size: 12px;
+        width: 100px;
         margin-top: -25px;
-        margin-left: 20px;
+        margin-left: 40px;
     }
 
 }
