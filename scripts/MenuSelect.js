@@ -38,7 +38,7 @@ let Sugestao = [
 
 let tipo = [
     "Populacão","IDH","Escolaridade","PIB","Área Territorial","Mortalidade Infantil",
-    "Indice de Exposicao a Criminalidade (IECV)","Poluicao (AQI)"
+    "Poluicao (AQI)"
 ];
 
 let populacao = [
@@ -84,10 +84,6 @@ let Mortalidade = [
     "12,85", "7,04", "6,15", "9,73", "30", "27,03", "24", "11,54", "26,4", "18,87", "5,13",
     "10,71", "7,81", "11,49", "38", "22,22", "16,26", "6,85", "34", "9", "46,51", "9,44",
     "10", "15,28", "30", "9,54", "10,29", "7,45"
-];
-
-let Criminalidade = [
-    "","",""
 ];
 
 let Poluicao = [
@@ -188,24 +184,34 @@ function grafico(){ /*devido as circunstancias, a checagem e realizada atraves d
   for(let j = 0; j < Sugestao.length; j++){
     if (Sugestao[j] == value1 )
      console.log("a");
-     /*let arr1 = x; */
+     let arr1 = Sugestao[j]
   }
   for(let i = 0; i < Sugestao.length; i++){
-    if (Sugestao[j] == value2 )
+    if (Sugestao[i] == value2 )
      console.log("a");
-     /*let arr2 = x; */
+     let arr2 = Sugestao[i]
   }
 
-  if(value3 == "Criminalidade"){
-
+  if(value3 == "IDH"){
+    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['IDH'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
+    /* inserir onclick event aq para display sair de none*/
   }
-  else if(value3 == "Mortalidade"){
-
+  else if(value3 == "Mortalidade Infantil"){
+    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Mortalidade Infantil'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
   }
-  else if(value3 == "Natalidade"){
-
+  else if(value3 == "Populacao"){
+    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Populacao'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
+  }
+  else if(value3 == "Escolaridade"){
+    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Escolaridade'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
+  }
+  else if(value3 == "PIB"){
+    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['PIB'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
+  }
+  else if(value3 == "ATerri"){
+    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Area Territorial'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
   }
   else if(value3 == "Poluicao"){
-
+    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Poluicao'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
   }
 }

@@ -105,6 +105,7 @@ body{
     position:absolute;
     float:left;
     margin: 0 0 0 135px;
+    top: 680px;
 }
 
 .Topo button{
@@ -143,36 +144,68 @@ hr{
 
 .wrapper{
     max-width: 250px;
-    margin:100px 100px 10px auto;
+    margin:150px 370px 0 auto;
+    height:30px
 }
 
 .wrapper .search-input{
+    display: block;
+    float: right;
+    margin-right: -50px;
+    height: 35px;
+    box-sizing: border-box;
     background: #fff;
-    width: 100%;
+    width: 110%;
     border-radius: 5px;
     box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12)
 }
 
 .search-input input{
-    height: 30px;
-    width: 100%;
+    display: block;
+    float: right;
+    height: 35px;
+    max-width: 100%;
+    width: auto;
     outline: none;
     border: none;
     border-radius: 5px;
     padding: 0 10px 0 20px;
     font-size: 20px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
 }
-
 .search-input .icon{
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
     position: absolute;
-    top: 0;
-    right: 0;
     text-align: center;
     font-size: 20px;
-    color:#000;
+    cursor: pointer;
+    color: red;
+    margin-left: 245px;
+    margin-top: 5px;
+}
+
+.search-input .autocom-box{
+    /* padding: 10px 8px; */
+    max-height: 280px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.autocom-box li{
+    color: #000;
+    list-style: none;
+    padding: 0px 12px;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+    display: none;
+}
+
+.autocom-box li:hover{
+    background: #efefef;
 }
 
 @media only screen and (min-width:1500px){
@@ -182,7 +215,6 @@ hr{
         padding-top: 30px;
     }
 }
-
 
 @media only screen and (max-width:832px){
     
@@ -217,6 +249,17 @@ hr{
         float:right;
         margin:0 70px 150px 400px;
     }
+
+    .search-input input{
+        width: auto;
+    }
+
+    .wrapper .search-input{
+        margin-top: -120px;
+        margin-right: -240px;
+        width: auto;
+    }
+
 }
 
 @media only screen and (max-width:740px){
@@ -225,6 +268,7 @@ hr{
     }
 
     .img-topo{
+        width: 80%;
         margin-top: -300px;
         margin-left: 20px;
     }
@@ -263,9 +307,10 @@ hr{
    }
 
    .img-baixo img{
-    margin-top: -50px;
+    margin-top: -70px;
     width:110%;
    }
+
    .Conteudo button{
     margin-bottom: 260px;
    }
@@ -273,11 +318,16 @@ hr{
 
 @media only screen and (max-width:565px){
 
+    .img-baixo img{
+        width: 84%;
+    }
+
     .Topo h1{
         margin-right: 180px;
     }
 
     .Baixo h1, .Baixo h2{
-        margin-left: 340px;
+        size: 8px;
+        margin-left: 310px;
     }
 }

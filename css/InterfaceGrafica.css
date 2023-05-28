@@ -11,7 +11,7 @@ body{
     padding:0px;
 }
 
-.Grafico1{
+.Grafico{
     border: white 1px dashed;
     border-radius: 10px;
     background-image: url(img/cartographer.png);
