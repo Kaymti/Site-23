@@ -11,13 +11,24 @@ body{
     padding:0px;
 }
 
-.Grafico{
+.Grafico{   
+    display: none;
     border: white 1px dashed;
     border-radius: 10px;
     background-image: url(img/cartographer.png);
     margin: 0 20px 0 20px;
 }
 
+.Grafico.Activated h2{
+    padding-left: 750px;
+    padding-right: 10px;
+    color: antiquewhite;
+}
+
+.Grafico.Activated{
+    display: block; 
+}
+
 hr{
-    margin-top: 200px;
+    margin-top: 10px;
 }

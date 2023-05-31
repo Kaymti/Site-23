@@ -11,6 +11,7 @@ var searchInp3 = wrapper3.querySelector("input");
 selectBtn1 = document.querySelector(".select-btn.cid1");
 selectBtn2 = document.querySelector(".select-btn.cid2");
 selectBtn3 = document.querySelector(".select-btn.tipo");
+Graf = document.querySelector(".Grafico");
 
 selectBtn1.addEventListener("click", () => {
     wrapper1.classList.toggle("active");
@@ -181,37 +182,63 @@ var value3;  /* tipo de dado*/
 
 function grafico(){ /*devido as circunstancias, a checagem e realizada atraves de ifs =( */
 
-  for(let j = 0; j < Sugestao.length; j++){
-    if (Sugestao[j] == value1 )
-     console.log("a");
-     let arr1 = Sugestao[j]
+    let arr1;
+    let arr2;
+    let i;
+    let j;
+
+  for(j = 0; j < Sugestao.length; j++){
+    if (Sugestao[j] == value1){
+        break;
+    }
   }
-  for(let i = 0; i < Sugestao.length; i++){
-    if (Sugestao[i] == value2 )
-     console.log("a");
-     let arr2 = Sugestao[i]
+  for(i = 0; i < Sugestao.length; i++){
+    if (Sugestao[i] == value2 ){
+        break;
+    }
   }
 
   if(value3 == "IDH"){
-    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['IDH'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
-    /* inserir onclick event aq para display sair de none*/
+    arr1 = IDH[j];
+    arr2 = IDH[i];
+    document.getElementById('garf').innerHTML += '<img src="https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'IDH\'],data:['+arr1+','+arr2+']}/>'
+    Graf.classList.toggle("Activated");
   }
   else if(value3 == "Mortalidade Infantil"){
-    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Mortalidade Infantil'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
+    arr1 = Mortalidade[j];
+    arr2 = Mortalidade[i];
+    document.getElementById('garf').innerHTML += '<img src="https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'Mortalidade Infantil\'],data:['+arr1+','+arr2+']}/>'
+    Graf.classList.toggle("Activated");
   }
   else if(value3 == "Populacao"){
-    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Populacao'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
+    arr1 = populacao[j];
+    arr2 = populacao[i];
+    document.getElementById('garf').innerHTML += '<img src="https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'Populacao\'],data:['+arr1+','+arr2+']}/>'
+    Graf.classList.toggle("Activated");
   }
   else if(value3 == "Escolaridade"){
-    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Escolaridade'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
+    arr1 = Escolaridade[j];
+    arr2 = Escolaridade[i];
+    document.getElementById('garf').innerHTML += '<img src="https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'Escolaridade\'],data:['+arr1+','+arr2+']}/>'
+    Graf.classList.toggle("Activated");
   }
   else if(value3 == "PIB"){
-    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['PIB'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
+    arr1 = PIB[j];
+    arr2 = PIB[i];
+    document.getElementById('garf').innerHTML += '<img src="https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'PIB\'],data:['+arr1+','+arr2+']}/>'
+    Graf.classList.toggle("Activated");
   }
   else if(value3 == "ATerri"){
-    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Area Territorial'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
+    arr1 = ATerri[j];
+    arr2 = ATerri[i];
+    document.getElementById('garf').innerHTML += '<img src="https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'Area Territorial\'],data:['+arr1+','+arr2+']}/>'
+    Graf.classList.toggle("Activated");
   }
   else if(value3 == "Poluicao"){
-    document.getElementById(garf).innerHTML = <img src="https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['Poluicao'], datasets:[{label:'${value1}',data:[${arr1}]},{label:'${value2}',data:[${arr2}]}]}}" />
+    arr1 = Poluicao[j];
+    arr2 = Poluicao[i];
+    document.getElementById('garf').innerHTML += '<img src="https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'Poluicao\'],data:['+arr1+','+arr2+']}/>'
+    Graf.classList.toggle("Activated");
   }
+
 }
