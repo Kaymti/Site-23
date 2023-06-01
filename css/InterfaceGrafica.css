@@ -29,6 +29,14 @@ body{
     display: block; 
 }
 
+.Grafico img{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 2px;
+}
+
 hr{
     margin-top: 10px;
 }

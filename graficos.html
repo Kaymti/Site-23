@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/InterfaceGrafica.css">
     <link rel="stylesheet" type="text/css" href="css/MenuSelect.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="scripts/MenuMobile.js" defer></script>
     <script src="scripts/MenuSelect.js" defer></script>
@@ -18,11 +18,6 @@
    <body>
     <title>Graficos - Geodex </title>
       
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    -->
-
    <header class="primary-header flex bg-light">
       <div>
         <div class="logo"><img src= "css/img/parrotblk.png"></div>
@@ -86,7 +81,8 @@
    <div class="envio"><input type="button" value="Enviar" onclick="envio()"></div> 
  </div>
  <hr>
-  <div class="Grafico" id="garf">  
+  <div class="Grafico"> 
+     <img src="" id="garf"> 
      <h2> Cidade 1: Info </h2> 
      <h2> Cidade 2: Info </h2> 
   </div>
@@ -94,8 +90,15 @@
 
  <script>
   function envio(){
+    Graf = document.querySelector(".Grafico");
+
       grafico();
+      refreshDiv();
+      Graf.classList.toggle("Activated");
   } 
+  function refreshDiv(){
+    $('#Garf').load(location.href + "#Garf");
+  }
  </script>
 
 </html>
