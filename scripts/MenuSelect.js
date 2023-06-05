@@ -187,6 +187,8 @@ function grafico(){ /*devido as circunstancias, a checagem e realizada atraves d
     let i;
     let j;
     var c;
+    let value10 = encodeURIComponent(value1)
+    let value20 = encodeURIComponent(value2)
 
   for(j = 0; j < Sugestao.length; j++){
     if (Sugestao[j] == value1){
@@ -199,47 +201,34 @@ function grafico(){ /*devido as circunstancias, a checagem e realizada atraves d
     }
   }
 
+  arr1 = Poluicao[j];
+  arr2 = Poluicao[i];
+
   if(value3 == "IDH"){
-    arr1 = IDH[j];
-    arr2 = IDH[i];
-    c = 'https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'IDH\'],data:['+arr1+','+arr2+']}';
-    document.getElementById('garf').src = c
+    c  = "https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['" + value10 + "','" + value20 + "'],datasets:[{label:'IDH',data:[" + arr1 + "," + arr2 + "]}]}}";
+    document.getElementById('Garf').src = c
   }
   else if(value3 == "Mortalidade Infantil"){
-    arr1 = Mortalidade[j];
-    arr2 = Mortalidade[i];
-    c = 'https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'],datasets:[{label:[\'Mortalidade Infantil\'],data:['+arr1+','+arr2+']}'
-    document.getElementById('garf').src = c
+    c = "https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['" + value10 + "','" + value20 + "'],datasets:[{label:'Mortalidade',data:[" + arr1 + "," + arr2 + "]}]}}";
+    document.getElementById('Garf').src = c
   }
   else if(value3 == "Populacao"){
-    arr1 = populacao[j];
-    arr2 = populacao[i];
-    c = 'https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'],datasets:[{label:[\'Populacao\'],data:['+arr1+','+arr2+']}'
-    document.getElementById('garf').src = c
+    c = "https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['" + value10 + "','" + value20 + "'],datasets:[{label:'Populacao',data:[" + arr1 + "," + arr2 + "]}]}}";
+    document.getElementById('Garf').src = c
   }
   else if(value3 == "Escolaridade"){
-    arr1 = Escolaridade[j];
-    arr2 = Escolaridade[i];
-    c = 'https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'Escolaridade\'],data:['+arr1+','+arr2+']}'
-    document.getElementById('garf').src = c
+    c = "https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['" + value10 + "','" + value20 + "'],datasets:[{label:'Escolaridade',data:[" + arr1 + "," + arr2 + "]}]}}";
+    document.getElementById('Garf').src = c
   }
   else if(value3 == "PIB"){
-    arr1 = PIB[j];
-    arr2 = PIB[i];
-    c = 'https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'PIB\'],data:['+arr1+','+arr2+']}'
-    document.getElementById('garf').src = c
+    c = "https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['" + value10 + "','" + value20 + "'],datasets:[{label:'PIB',data:[" + arr1 + "," + arr2 + "]}]}}";
   }
-  else if(value3 == "ATerri"){
-    arr1 = ATerri[j];
-    arr2 = ATerri[i];
-    c = 'https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'Area Territorial\'],data:['+arr1+','+arr2+']}'
-    document.getElementById('garf').src = c
+  else if(value3 == "Área Territorial"){
+    c = "https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['" + value10 + "','" + value20 + "'],datasets:[{label:'Área Territorial',data:[" + arr1 + "," + arr2 + "]}]}}";
+    document.getElementById('Garf').src = c
   }
-  else if(value3 == "Poluicao"){
-    arr1 = Poluicao[j];
-    arr2 = Poluicao[i];
-    c = 'https://quickchart.io/chart?width=250&height=200&chart={type:\'bar\',data:{labels:['+value1+','+value2+'], datasets:[{label:[\'Poluicao\'],data:['+arr1+','+arr2+']}'
-    document.getElementById('garf').src = c
+  else if(value3 == "Poluicao (AQI)"){
+    c = "https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['" + value10 + "','" + value20 + "'],datasets:[{label:'Poluicao',data:[" + arr1 + "," + arr2 + "]}]}}";
+    document.getElementById('Garf').src = c
   }
-
 }
