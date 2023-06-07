@@ -1,12 +1,3 @@
-@font-face {
-    font-family: "Romono" ;
-    src: url(fonts/RobotoMono-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: Montserrat;
-    src: url(fonts/Montserrat-VariableFont_wght.ttf);
-}
 
 :root{
     --bg-color: rgb(20,20,20);
@@ -29,21 +20,9 @@ body{
 }
 
 .Grafico.Activated h2{
-    font-size: 25px;
-    font-family: Romono;
-    display: block;
-    float: right;
+    padding-left: 750px;
+    padding-right: 10px;
     color: antiquewhite;
-}
-
-#info1{
-    margin-top: -250px;
-    padding-right: 30px;
-}
-
-#info2{
-    margin-top: -200px;
-    padding-right: 30px;
 }
 
 .Grafico.Activated{
@@ -53,10 +32,9 @@ body{
 .Grafico img{
     margin-top: 20px;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 2px;
-    background-color: whitesmoke;
 }
 
 hr{
