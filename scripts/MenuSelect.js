@@ -209,6 +209,12 @@ function grafico(){
     document.getElementById('titulo').innerHTML = '<h1> Indice de Desenvolvimento Humano </h1>';
     document.getElementById('info1').innerHTML = '<h2>'+value1+' : '+arr1+'</h2>';
     document.getElementById('info2').innerHTML = '<h2>'+value2+' : '+arr2+'</h2>';
+    if(arr1 > arr2){
+        document.getElementById('justif').innerHTML = '<h2>'+value1+' possui um IDH maior que '+value2+'.</h2>';
+    }
+    else{
+        document.getElementById('justif').innerHTML = '<h2>'+value2+' possui um IDH maior que '+value1+'.</h2>';
+    }
   }
   else if(value3 == "Mortalidade Infantil"){
     arr1 = Mortalidade[j];
@@ -218,6 +224,12 @@ function grafico(){
     document.getElementById('titulo').innerHTML = '<h1> Taxa de Mortalidade Infantil </h1>';
     document.getElementById('info1').innerHTML = '<h2>'+value1+' : '+arr1+' óbitos por mil nascidos vivos</h2>';
     document.getElementById('info2').innerHTML = '<h2>'+value2+' : '+arr2+' óbitos por mil nascidos vivos</h2>';
+    if(arr1 > arr2){
+        document.getElementById('justif').innerHTML = '<h2>'+value1+' possui um indice de mortalide Infantil maior que '+value2+'.</h2>';
+    }
+    else{
+        document.getElementById('justif').innerHTML = '<h2>'+value2+' possui um indice de mortalide Infantil maior que '+value1+'.</h2>';
+    }
   }
   else if(value3 == "Populacao"){
     arr1 = populacao[j];
@@ -227,6 +239,12 @@ function grafico(){
     document.getElementById('titulo').innerHTML = '<h1> População Total </h1>';
     document.getElementById('info1').innerHTML = '<h2>'+value1+' : '+arr1+' pessoas</h2>';
     document.getElementById('info2').innerHTML = '<h2>'+value2+' : '+arr2+' pessoas</h2>';
+    if(arr1 > arr2){
+        document.getElementById('justif').innerHTML = '<h2>'+value1+' possui uma população maior que '+value2+'.</h2>';
+    }
+    else{
+        document.getElementById('justif').innerHTML = '<h2>'+value2+' possui uma população maior que '+value1+'.</h2>';
+    }
   }
   else if(value3 == "Escolaridade"){
     arr1 = Escolaridade[j];
@@ -236,6 +254,12 @@ function grafico(){
     document.getElementById('titulo').innerHTML = '<h1> Taxa de Escolaridade </h1>';
     document.getElementById('info1').innerHTML = '<h2>'+value1+' : '+arr1+'%</h2>';
     document.getElementById('info2').innerHTML = '<h2>'+value2+' : '+arr2+'%</h2>';
+    if(arr1 > arr2){
+        document.getElementById('justif').innerHTML = '<h2>'+value1+' possui uma melhor taxa de escolaridade que '+value2+'.</h2>';
+    }
+    else{
+        document.getElementById('justif').innerHTML = '<h2>'+value2+' possui uma melhor taxa de escolaridade que '+value1+'.</h2>';
+    }
   }
   else if(value3 == "PIB"){
     arr1 = PIB[j];
@@ -245,6 +269,12 @@ function grafico(){
     document.getElementById('titulo').innerHTML = '<h1> Produto Interno Bruto </h1>';
     document.getElementById('info1').innerHTML = '<h2>'+value1+' : '+arr1+' R$</h2>';
     document.getElementById('info2').innerHTML = '<h2>'+value2+' : '+arr2+' R$</h2>';
+    if(arr1 > arr2){
+        document.getElementById('justif').innerHTML = '<h2>'+value1+' possui um maior PIB que '+value2+'.</h2>';
+    }
+    else{
+        document.getElementById('justif').innerHTML = '<h2>'+value2+' possui um maior PIB que '+value1+'.</h2>';
+    }
   }
   else if(value3 == "Área Territorial"){
     arr1 = ATerri[j];
@@ -254,14 +284,28 @@ function grafico(){
     document.getElementById('titulo').innerHTML = '<h1> Área Territorial </h1>';
     document.getElementById('info1').innerHTML = '<h2>'+value1+' : '+arr1+' km²</h2>';
     document.getElementById('info2').innerHTML = '<h2>'+value2+' : '+arr2+' km²</h2>';
-  }
+    if(arr1 > arr2){
+        document.getElementById('justif').innerHTML = '<h2>'+value1+' possui mais territorio que '+value2+'.</h2>';
+    }
+    else{
+        document.getElementById('justif').innerHTML = '<h2>'+value2+' possui mais território que '+value1+'.</h2>';
+      }
+    }
+  
   else if(value3 == "Poluicao (AQI)"){
     arr1 = Poluicao[j];
     arr2 = Poluicao[i];
     c = "https://quickchart.io/chart?width=250&height=200&chart={type:'bar',data:{labels:['" + value10 + "','" + value20 + "'],datasets:[{label:'Poluicao',data:[" + arr1 + "," + arr2 + "]}]}}";
     document.getElementById('Garf').src = c
+    document.getElementById('titulo').innerHTML = '<h1> AQI (Air quality Index) </h1>';
     document.getElementById('info1').innerHTML = '<h2>'+value1+' : Média anual de '+arr1+' AQI </h2>';
     document.getElementById('info2').innerHTML = '<h2>'+value2+' : Média anual de '+arr2+' AQI</h2>';
+    if(arr1 > arr2){
+        document.getElementById('justif').innerHTML = '<h2>'+value1+' possui uma maior taxa de poluição que '+value2+'.</h2>';
+    }
+    else{
+        document.getElementById('justif').innerHTML = '<h2>'+value2+' possui uma maior taxa de poluição que '+value1+'.</h2>';
+    }
   }
 
 }
