@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Romono" ;
+    src: url(fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
 
 :root{
     --bg-color: rgb(20,20,20);
@@ -19,10 +28,36 @@ body{
     margin: 0 20px 0 20px;
 }
 
+.Grafico.Activated{
+    display: block;
+    margin-bottom: 30px;
+}
+
 .Grafico.Activated h2{
-    padding-left: 750px;
-    padding-right: 10px;
+    font-size: 25px;
+    font-family: Romono;
+    float: right;
     color: antiquewhite;
+}
+
+#titulo{
+    font-size: 20px;
+    margin-left: 430px;
+    margin-top: -400px;
+    margin-right: 10px;
+    float: right;
+    color: antiquewhite;
+    font-family: Quadranta;
+}
+
+#info1{
+    margin-top: -320px;
+    padding-right: 30px;
+}
+
+#info2{
+    margin-top: -280px;
+    padding-right: 30px;
 }
 
 .Grafico.Activated{
@@ -32,9 +67,10 @@ body{
 .Grafico img{
     margin-top: 20px;
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border: none;
     border-radius: 2px;
+    background-color: whitesmoke;
 }
 
 hr{
