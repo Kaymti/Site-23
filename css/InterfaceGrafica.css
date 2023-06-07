@@ -42,9 +42,10 @@ body{
 
 #titulo{
     font-size: 20px;
-    margin-left: 430px;
+    margin-left: 500px;
     margin-top: -400px;
-    margin-right: 10px;
+    margin-right: 20px;
+    text-align: right;
     float: right;
     color: antiquewhite;
     font-family: Quadranta;
@@ -53,11 +54,24 @@ body{
 #info1{
     margin-top: -320px;
     padding-right: 30px;
+    text-align: right;
+    margin-left: 600px;
 }
 
 #info2{
     margin-top: -280px;
     padding-right: 30px;
+    text-align: right;
+    margin-left: 520px;
+}
+
+#justif{
+    float: right;
+    margin-top: -200px;
+    margin-left: 600px;
+    margin-right: 20px;
+    text-align: right;
+    font-size: 17px;
 }
 
 .Grafico.Activated{
