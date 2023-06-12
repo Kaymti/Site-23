@@ -71,12 +71,14 @@ body{
 }
 
 .Bandeira img{
+    position: absolute;
     display:block;
     float: left;
     padding: black 2px solid;
     border-radius: 10px;
-    margin: 410px 0 10px -450px;
-    width: 35%;
+    margin: 410px 0 10px 20px;
+    width: 36%;
+    min-width: 100px;
     max-width: 450px;
 }
 
@@ -149,4 +151,45 @@ body{
 
 .Prox .three{
     margin-top: -10px;
+}
+
+@media only screen and (max-width:1050px){
+    .Bandeira{
+        margin-top: -40px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .Bandeira{
+        margin-top: -80px;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .Bandeira{
+        margin-top: -115px;
+    }
+}
+
+@media only screen and (max-width:666px){
+    .Info{
+        width:50%
+    }
+
+    .Bandeira{
+        margin-top: -150px;
+        min-width:10%;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .Bandeira{
+        margin-top: -180px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .Bandeira{
+        margin-top: -220px;
+    }
 }
