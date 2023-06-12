@@ -252,8 +252,7 @@ hr{
     }
 
     .Baixo h1{
-        float:right;
-        margin:0 20px 10px 400px;
+       margin-right: 65px;
     }
 
     .Baixo h2{
@@ -271,6 +270,19 @@ hr{
         width: auto;
     }
 
+}
+@media only screen and (max-width:830px){
+    body{
+        height: 1100px;
+    }
+
+    .search-input.active{
+        margin-left: 210px;
+    }
+
+    .search-input.active .autocom-box{
+        margin-top: 40px;
+    }
 }
 
 @media only screen and (max-width:740px){
@@ -298,14 +310,10 @@ hr{
         float: right;
         margin:0 400px 0 50px;
     }
-
-    hr{
-        margin:-50px 0 0 0;
-    }
 }
 
 
-@media only screen and (max-width:650px){
+@media only screen and (max-width:666px){
 
    .img-topo{
     margin-bottom: 110px;
@@ -318,18 +326,32 @@ hr{
    }
 
    .img-baixo img{
-    margin-top: -70px;
-    width:110%;
+    margin-top: -30px;
+    width:85%;
    }
+   .Baixo h1{
+    margin-right: 65px;
+    margin-left: 380px;
+    }
+
+    .Baixo h2{
+     float:right;
+     margin-left:20px;
+    }
 
    .Conteudo button{
     margin-bottom: 260px;
    }
+
 }
 
 @media only screen and (max-width:565px){
 
     .img-baixo img{
+        width: 84%;
+    }
+
+    .img-topo img{
         width: 84%;
     }
 
@@ -340,5 +362,26 @@ hr{
     .Baixo h1, .Baixo h2{
         size: 8px;
         margin-left: 310px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .Baixo h1,.Baixo h2{
+        margin-left: 200px;
+    }
+
+    .img-baixo img{
+        width: 60%;
+    }
+    .search-input {
+        margin-left: 80px;
+    }
+
+    .search-input.active{
+        margin-left: 80px;
+    }
+
+    .search-input.active .autocom-box{
+        margin-top: 40px;
     }
 }
